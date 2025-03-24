@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import heroImage from '../img/img-venise.jpg';
-import './Enseigner.css';
+import '../style/css/Enseigner.css';;
 
 const Enseigner = () => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './TabImg.css';
+import '../style/css/TabImg.css';
 
 const TabImg = ({ imageUrl, imageAlt, title, description }) => {
     return (

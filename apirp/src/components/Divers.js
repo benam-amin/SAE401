@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Divers.css';
+import '../style/css/Divers.css';
 
 const DiversPage = () => {
   const [username, setUsername] = useState('');

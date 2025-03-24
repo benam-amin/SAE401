@@ -1,5 +1,5 @@
 import React from 'react';
-import './Actualite.css';
+import '../style/css/Actualite.css';
 
 const Actualite = ({ image, title, description, url }) => {
     // Limite de caractères pour le titre

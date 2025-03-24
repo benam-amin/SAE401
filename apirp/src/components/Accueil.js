@@ -1,5 +1,5 @@
 import React from 'react';
-import './Accueil.css';
+import '../style/css/Accueil.css';
 import TabImg from './TabImg';
 import Actualite from './Actualite'; // Importer le composant Actualite
 import image from '../img/drapeau_italie2.jpg'; // Assure-toi que le chemin est correct
