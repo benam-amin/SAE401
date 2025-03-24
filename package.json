@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@remix-run/node": "^2.16.2",
+    "@remix-run/react": "^2.16.2",
+    "@remix-run/serve": "^2.16.2",
+    "isbot": "^4.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.16.2",
+    "vite": "^6.2.2"
+  }
+}
