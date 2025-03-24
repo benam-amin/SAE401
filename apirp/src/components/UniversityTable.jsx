@@ -1,4 +1,3 @@
-import React from 'react';
 import '../style/css/UniversityTable.css';
 
 const UniversityTable = ({ university }) => {

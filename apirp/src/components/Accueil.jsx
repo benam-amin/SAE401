@@ -1,4 +1,3 @@
-import React from 'react';
 import '../style/css/Accueil.css';
 import TabImg from './TabImg';
 import Actualite from './Actualite'; // Importer le composant Actualite

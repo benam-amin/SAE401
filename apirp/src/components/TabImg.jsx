@@ -1,4 +1,3 @@
-import React from 'react';
 import '../style/css/TabImg.css';
 
 const TabImg = ({ imageUrl, imageAlt, title, description }) => {

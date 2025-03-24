@@ -1,4 +1,3 @@
-import React from 'react';
 import '../style/css/Actualite.css';
 
 const Actualite = ({ image, title, description, url }) => {

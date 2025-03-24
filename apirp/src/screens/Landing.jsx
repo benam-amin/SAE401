@@ -1,4 +1,3 @@
-import React from "react";
 // Header&Footer
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import TopNavbar from "../components/Nav/TopNavbar";

@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from './Hero'; // Assure-toi d'importer le composant Hero correctement
 import '../style/css/Adherer.css';; // Importe le fichier CSS pour le composant Adherer
 import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
