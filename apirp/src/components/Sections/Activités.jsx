@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Elements/FullButton";
 //Assets
-import HeaderImage from "../../assets/img/Header-Activites.jpg";
+import HeaderImage from "../../img/Header-Activites.jpg";
 
 export function HeaderActivités() {
 
