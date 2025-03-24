@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import FullButton from "../Buttons/FullButton";
+import FullButton from "../Elements/FullButton";
 // Assets
-import AddImage2 from "../../assets/img/Forum/Forum-1.jpg";
-import Programme21 from "../../assets/img/Forum/Programme21.jpg";
-import Programme20 from "../../assets/img/Forum/Programme20.jpg";
-import HeaderImage from "../../assets/img/Forum/Header-Forum.jpg";
+import AddImage2 from "../../assets/img/Forum-1.jpg";
+import Programme21 from "../../assets/img/Programme21.jpg";
+import Programme20 from "../../assets/img/Programme20.jpg";
+import HeaderImage from "../../assets/img/Header-Forum.jpg";
 
 
 

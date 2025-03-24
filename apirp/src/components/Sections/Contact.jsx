@@ -3,13 +3,13 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 // Assets
-import ProjectImg1 from "../../assets/img/projects/bulletin1.png";
-import ProjectImg2 from "../../assets/img/projects/bulletin2.png";
-import ProjectImg3 from "../../assets/img/projects/bulletin3.png";
-import ProjectImg4 from "../../assets/img/projects/bulletin4.png";
-import ProjectImg5 from "../../assets/img/projects/bulletin5.png";
-import ProjectImg6 from "../../assets/img/projects/bulletin6.png";
-import HeaderImage from "../../assets/img/Contact/Header-Contact.jpg";
+import ProjectImg1 from "../../assets/img/bulletin1.png";
+import ProjectImg2 from "../../assets/img/bulletin2.png";
+import ProjectImg3 from "../../assets/img/bulletin3.png";
+import ProjectImg4 from "../../assets/img/bulletin4.png";
+import ProjectImg5 from "../../assets/img/bulletin5.png";
+import ProjectImg6 from "../../assets/img/bulletin6.png";
+import HeaderImage from "../../assets/img/Header-Contact.jpg";
 
 export function Contact() {
   return (

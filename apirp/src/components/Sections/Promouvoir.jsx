@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import FullButton from "../Buttons/FullButton";
+import FullButton from "../Elements/FullButton";
 // Assets
 import AddImage2 from "../../assets/img/Promouvoir/Promouvoir-1.jpg";
 import HeaderImage from "../../assets/img/Promouvoir/Header-Promouvoir.jpg";
