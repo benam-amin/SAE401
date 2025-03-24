@@ -1,4 +1,3 @@
-import React from 'react';
 import './Hero.css'; // Importe le fichier CSS pour le composant Hero
 
 const Hero = ({ title, description, buttonText, heroImage, scrollTo }) => {

@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components";
 // Components
 import FullButton from "../Elements/FullButton";
 // Assets

@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components";
 // Components
 import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Elements/FullButton";

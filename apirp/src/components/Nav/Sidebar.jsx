@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 // Assets
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
