@@ -1,11 +1,11 @@
 import styled from "styled-components";
 // Components
-import FullButton from "../Elements/FullButton";
+import FullButton from "../components/Elements/FullButton";
 // Assets
-import AddImage2 from "../../img/Forum-1.jpg";
-import Programme21 from "../../img/Programme21.jpg";
-import Programme20 from "../../img/Programme20.jpg";
-import HeaderImage from "../../img/Header-Forum.jpg";
+import AddImage2 from "../img/Forum-1.jpg";
+import Programme21 from "../img/Programme21.jpg";
+import Programme20 from "../img/Programme20.jpg";
+import HeaderImage from "../img/Header-Forum.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
 
 
