@@ -25,7 +25,7 @@ export default function Landing() {
           <Route path="/" element={<Accueil />} /> 
           <Route path="Forum" element={<><HeaderForum /><Forum /></>} />
           <Route path="Activités" element={<><HeaderActivités /><Activités /></>} />
-          <Route path="Contact" element={<><Contact /><Assoc /><Elu /><Bulletin /></>}/>
+          <Route path="Contact" element={<><HeaderContact /><Contact /><Assoc /><Elu /><Bulletin /></>}/>
           <Route path="/adherer" element={<Adherer />} />
           <Route path="Promouvoir" element={<><HeaderPromouvoir /><Promouvoir /></>} />
           <Route path="/apprendre" element={<Apprendre />} />

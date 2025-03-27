@@ -10,12 +10,14 @@ import HeaderImage from "../../img/Header-Forum.jpg";
 
 
 export function HeaderForum() {
-    <HeaderPage
-    h1 = "des associations franco-italiennes"
-    h1Green = "Forum"
-    description = "Bienvenue sur notre page forum des associastions. Découvrez le prochain forum des associations franco-italiennes et son programme."
-    headerImage = {HeaderImage}
-    />
+    return( 
+        <HeaderPage
+        h1 = "des associations franco-italiennes"
+        h1Green = "Forum"
+        description = "Bienvenue sur notre page forum des associastions. Découvrez le prochain forum des associations franco-italiennes et son programme."
+        headerImage = {HeaderImage}
+        />
+    );
 }
 
 export function Forum() {

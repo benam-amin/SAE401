@@ -4,12 +4,14 @@ import '../style/css/Enseigner.css';;
 
 
 export function HeaderEnseigner() {
+  return (
     <HeaderPage
     h1 = "grâce à notre association"
     h1Green = "Enseigner"
     description = "Bienvenue sur notre page dédier à l'enseignement. Découvrez les avantages de devenir membre de notre association."
     headerImage = {heroImage}
     />
+  );
 }
 export function Enseigner() {
 
