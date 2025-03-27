@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
+import {styled} from "styled-components";
 
 // Components
 import Sidebar from "../Nav/Sidebar";

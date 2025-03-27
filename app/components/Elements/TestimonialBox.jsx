@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 // Assets
 import QuoteIcon from "../../assets/svg/Quotes";
 

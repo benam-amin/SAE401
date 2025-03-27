@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 
 export default function BlogBox({ tag, title, text, action, author }) {
   return (

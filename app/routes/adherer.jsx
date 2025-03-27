@@ -1,4 +1,3 @@
-import Hero from './Hero'; // Assure-toi d'importer le composant Hero correctement
 import '../style/css/Adherer.css';; // Importe le fichier CSS pour le composant Adherer
 import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
 import adhererImg from '../img/img-adherer.png'; // Chemin vers ton image
@@ -19,15 +18,9 @@ export function HeaderEnseigner() {
 
 const Adherer = () => {
     return (
+        <><HeaderEnseigner />
         <div className="adherer-container">
-            <Hero
-                title={h1}
-                description={description}
-                buttonText={"Commencer"}
-                heroImage= {heroImage}
-                scrollTo={handleScrollToContent}
-            />
-
+            
             <div className="adherer-content1">
                 
                 <img src={adhererImg} alt="Adherer Image" className="adherer-image" />
@@ -63,6 +56,7 @@ const Adherer = () => {
             </div>
             
         </div>
+        </>
     );
 }
 

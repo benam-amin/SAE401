@@ -1,18 +1,18 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 // Components
-import ProjectBox from "../Elements/ProjectBox";
+import ProjectBox from "../components/Elements/ProjectBox";
 // Assets
-import ProjectImg1 from "../../img/bulletin1.png";
-import ProjectImg2 from "../../img/bulletin2.png";
-import ProjectImg3 from "../../img/bulletin3.png";
-import ProjectImg4 from "../../img/bulletin4.png";
-import ProjectImg5 from "../../img/bulletin5.png";
-import ProjectImg6 from "../../img/bulletin6.png";
+import ProjectImg1 from "../img/bulletin1.png";
+import ProjectImg2 from "../img/bulletin2.png";
+import ProjectImg3 from "../img/bulletin3.png";
+import ProjectImg4 from "../img/bulletin4.png";
+import ProjectImg5 from "../img/bulletin5.png";
+import ProjectImg6 from "../img/bulletin6.png";
 import HeaderPage from "../components/Elements/HeaderPage";
-import HeaderImage from "../../img/Header-Contact.jpg";
+import HeaderImage from "../img/Header-Contact.jpg";
 
 
-export function HeaderContact() {
+function HeaderContact() {
   return (
       <HeaderPage
       h1 = "Nous"
@@ -26,29 +26,32 @@ export function HeaderContact() {
     );
 }
 
-export function Contact() {
+export default function Contact() {
   return (
-    <HeaderWrapper className="container flexSpaceCenter">
-      <LeftSide className="flexCenter">
-        <div>
-        <h1 className="extraBold font60">Nous
-          <span className="darkColor"> contacter</span>
-        </h1>
-          <HeaderP className="font15">
-          Pour nous signaler tout changement de coordonnées personnelles (adresse de domicile, téléphone, courriel) ou professionnelles (changement d’établissement de rattachement, de statut, etc.), merci d’envoyer un courriel à : <span className="semiBold">apirp.association@gmail.com.</span>
-          <br />
-          Pour les renouvellement d’adhésion et pour les commandes de plaquettes pour la promotion de l’italien, nos adhérents peuvent aussi se servir des formulaires publiés dans les deux dernières page de notre bulletin annuel.</HeaderP>
-          <h3>Mail : apirp.association@gmail.com</h3><br />
-          <h3>Suivez nous sur <a  href="https://m.facebook.com/APIRP/" target="_blank" className="darkColor">Facebook</a> !</h3>
-        </div>
-      </LeftSide>
-      <RightSide>
-        <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
-        </ImageWrapper>
-       
-      </RightSide>
-    </HeaderWrapper>
+    <>
+      <HeaderContact />
+      <HeaderWrapper className="container flexSpaceCenter">
+        <LeftSide className="flexCenter">
+          <div>
+          <h1 className="extraBold font60">Nous
+            <span className="darkColor"> contacter</span>
+          </h1>
+            <HeaderP className="font15">
+            Pour nous signaler tout changement de coordonnées personnelles (adresse de domicile, téléphone, courriel) ou professionnelles (changement d’établissement de rattachement, de statut, etc.), merci d’envoyer un courriel à : <span className="semiBold">apirp.association@gmail.com.</span>
+            <br />
+            Pour les renouvellement d’adhésion et pour les commandes de plaquettes pour la promotion de l’italien, nos adhérents peuvent aussi se servir des formulaires publiés dans les deux dernières page de notre bulletin annuel.</HeaderP>
+            <h3>Mail : apirp.association@gmail.com</h3><br />
+            <h3>Suivez nous sur <a  href="https://m.facebook.com/APIRP/" target="_blank" className="darkColor">Facebook</a> !</h3>
+          </div>
+        </LeftSide>
+        <RightSide>
+          <ImageWrapper>
+            <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+          </ImageWrapper>
+        
+        </RightSide>
+      </HeaderWrapper>
+    </>
   );
 }
 const HeaderWrapper = styled.section`

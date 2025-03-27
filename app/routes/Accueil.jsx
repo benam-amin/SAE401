@@ -1,6 +1,6 @@
 import '../style/css/Accueil.css';
-import TabImg from './TabImg';
-import Actualite from './Actualite'; // Importer le composant Actualite
+import TabImg from '../components/TabImg';
+import Actualite from '../components/Actualite'; // Importer le composant Actualite
 import image from '../img/drapeau_italie2.jpg'; // Chemin corrigé ✅
 import '../img/Italie_icon.png'; // Si ce fichier existe aussi dans src/img/
 const Accueil = () => {

@@ -1,71 +1,30 @@
-import { PassThrough } from "stream";
+import type { AppLoadContext, EntryContext } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
-import { renderToPipeableStream } from "react-dom/server";
+import { renderToString } from "react-dom/server";
 import { ServerStyleSheet } from "styled-components";
-import type { EntryContext } from "@remix-run/node";
-import { renderHeadToString } from 'remix-island'
-import { Head } from './root'
-
-import {
-    createReadableStreamFromReadable,
-    type EntryContext,
-  } from '@remix-run/node'
 
 export default function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
-  remixContext: EntryContext
+  remixContext: EntryContext,
+  loadContext: AppLoadContext,
 ) {
   const sheet = new ServerStyleSheet();
-  let markup = "";
 
-  try {
-    markup = renderToPipeableStream(
-      sheet.collectStyles(<RemixServer context={remixContext} url={request.url} />),
-      {
-        onAllReady() {
+  let markup = renderToString(
+    sheet.collectStyles(
+      <RemixServer context={remixContext} url={request.url} />,
+    ),
+  );
+  const styles = sheet.getStyleTags();
 
-          responseHeaders.set("Content-Type", "text/html");
+  markup = markup.replace("__STYLES__", styles);
 
-          const head = renderHeadToString({
-            request,
-            remixContext,
-            Head,
-          })
+  responseHeaders.set("Content-Type", "text/html");
 
-        
-          sheet.seal();
-
-
-          const body = injectStyles(head, sheet, markup)
-          const stream = createReadableStreamFromReadable(body)
-
-          resolve(new Response(body, {
-            status: responseStatusCode,
-            headers: responseHeaders,
-          }));
-        },
-      }
-    );
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
+  return new Response("<!DOCTYPE html>" + markup, {
+    status: responseStatusCode,
+    headers: responseHeaders,
+  });
 }
-
-function injectStyles(
-    head: string,
-    styleSheet: ServerStyleSheet,
-    pipe: <Writable extends NodeJS.WritableStream>(
-      destination: Writable,
-    ) => Writable,
-  ) {
-    const body = new PassThrough()
-    body.write(
-      `<!DOCTYPE html><html><head>${head} ${styleSheet.getStyleTags()}</head><body><div id="root">`,
-    )
-    pipe(body)
-    body.write('</div></body></html>')
-    return body
-  }

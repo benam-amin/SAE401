@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 // Components
 import BlogBox from "../components/Elements/BlogBox";
 // import FullButton from "./FullButton";
 //Assets
-// import HeaderImage from "../../img/Header-Activites.jpg";
+import HeaderImage from "../img/Header-Activites.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
+import '../style/css/Enseigner.css';
 
 export function HeaderActivités() {
 
@@ -17,7 +18,7 @@ export function HeaderActivités() {
      />
   );
 }
-export function Activités() {
+export default function Activités() {
   return (
     <Wrapper >
       <div className="whiteBg">
@@ -115,79 +116,4 @@ export function Activités() {
 const Wrapper = styled.section`
   width: 100%;
   padding-top: 20px;
-`;
-
-
-const HeaderWrapper = styled.section`
-  padding-top: 80px;
-  width: 100%;
-  min-height: 840px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-const LeftSide = styled.div`
-  width: 50%;
-  height: 100%;
-  @media (max-width: 960px) {
-    width: 100%;
-    order: 2;
-    margin: 50px 0;
-    text-align: center;
-  }
-  @media (max-width: 560px) {
-    margin: 80px 0 50px 0;
-  }
-`;
-const RightSide = styled.div`
-  width: 50%;
-  height: 100%;
-  @media (max-width: 960px) {
-    width: 100%;
-    order: 1;
-    margin-top: 30px;
-  }
-`;
-const HeaderP = styled.div`
-  max-width: 470px;
-  padding: 15px 0 50px 0;
-  line-height: 1.5rem;
-  @media (max-width: 960px) {
-    padding: 15px 0 50px 0;
-    text-align: center;
-    max-width: 100%;
-  }
-`;
-const BtnWrapper = styled.div`
-  max-width: 190px;
-  @media (max-width: 960px) {
-    margin: 0 auto;
-  }
-`;
-const GreyDiv = styled.div`
-  width: 30%;
-  height: 700px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  @media (max-width: 960px) {
-    display: none;
-  }
-`;
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 9;
-  @media (max-width: 960px) {
-    width: 100%;
-    justify-content: center;
-  }
-`;
-const Img = styled.img`
-  @media (max-width: 560px) {
-    width: 80%;
-    height: auto;
-  }
 `;

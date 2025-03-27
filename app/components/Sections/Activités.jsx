@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {styled} from "styled-components";
 // Components
 import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Elements/FullButton";
