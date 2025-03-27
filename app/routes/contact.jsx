@@ -2,6 +2,7 @@ import {styled} from "styled-components";
 // Components
 import ProjectBox from "../components/Elements/ProjectBox";
 import hero from "../components/Hero";
+import TopNavBar from "../components/Nav/TopNavbar";
 // Assets
 import ProjectImg1 from "../img/bulletin1.png";
 import ProjectImg2 from "../img/bulletin2.png";
@@ -36,9 +37,10 @@ function HeaderContact() {
 export function ContactContenu() {
   return (
     <>
-      {/* <HeaderContact /> */}
-      <HeaderWrapper className="container flexSpaceCenter">
-        <LeftSide className="flexCenter">
+    <TopNavBar />
+      <HeaderContact />
+      {/* <HeaderWrapper className="container flexSpaceCenter"> */}
+        {/* <LeftSide className="flexCenter">
           <div>
           <h1 className="extraBold font60">Nous
             <span className="darkColor"> contacter</span>
@@ -50,14 +52,14 @@ export function ContactContenu() {
             <h3>Mail : apirp.association@gmail.com</h3><br />
             <h3>Suivez nous sur <a  href="https://m.facebook.com/APIRP/" target="_blank" className="darkColor">Facebook</a> !</h3>
           </div>
-        </LeftSide>
-        <RightSide>
+        </LeftSide> */}
+        {/* <RightSide>
           <ImageWrapper>
             <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
           </ImageWrapper>
         
-        </RightSide>
-      </HeaderWrapper>
+        </RightSide> */}
+      {/* </HeaderWrapper> */}
     </>
   );
 }

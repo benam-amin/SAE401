@@ -4,17 +4,18 @@ import TopNavBar from "../components/Nav/TopNavbar";
 import TabImg from '../components/TabImg';
 import Actualite from '../components/Actualite'; // Importer le composant Actualite
 import image from '../img/drapeau_italie2.jpg'; // Chemin corrigé ✅
-import '../img/Italie_icon.png'; // Si ce fichier existe aussi dans src/img/
+import italieIcon from '../img/Italie_icon.png'; // Si ce fichier existe aussi dans src/img/
 const Accueil = () => {
   return (
+    <> <TopNavBar />
     <div className="accueil-container">
 
       <div className="hero">
-          {/* <img className="background-image" src="./img/italie_paris.jpg" alt="Background" /> */}
+          <img className="background-image" src={italieIcon} alt="Background" />
 
           <div className="hero-content">
-              {/* <h1>Apirp</h1>
-              <p>Association des Professeurs d'Italien de la Région Parisienne</p> */}
+              <h1>Apirp</h1>
+              <p>Association des Professeurs d'Italien de la Région Parisienne</p>
               {/* Tu peux ajouter d'autres éléments ici si nécessaire */}
           </div>
       </div>
@@ -28,15 +29,16 @@ const Accueil = () => {
             imageAlt="Description de l'image"
             title="Notre association a pour vocation :"
             description=
-              <ul>
+              {<ul>
                 <li> <span className='span'>- d’établir et développer</span> des liens de solidarité et d’amitié entre les italianistes de la région parisienne; </li>
                 <li> <span className='span'>- de renseigner</span> les professeurs d’italien à tous niveaux sur la diffusion de l’enseignement de l’italien en région parisienne ;</li>
                 <li> <span className='span'>- de promouvoir</span> l’enseignement de l’italien.</li> 
               </ul>
+              }
         />
 
       </div>
-      {/* <img src='../img/italie_icon.png' alt="Description de l'image"/> */}
+      <img src='../img/italie_icon.png' alt="Description de l'image"/>
 
       <img className="img" src={import('../img/Italie_icon.png')} alt="Description de l'image" />
 
@@ -138,6 +140,7 @@ const Accueil = () => {
 
       </div>
     </div>
+    </>
   )
 }
 

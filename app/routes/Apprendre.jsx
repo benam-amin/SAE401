@@ -3,6 +3,7 @@ import '../style/css/index.css';
 import UniversityTable from '../components/UniversityTable';
 import '../style/css/Apprendre.css';
 import heroImage from '../img/italie_rome.jpg';
+import TopNavBar from "../components/Nav/TopNavbar";
 
 
 const Apprendre = () => {
@@ -124,27 +125,30 @@ const Apprendre = () => {
     ];
 
     return (
-        <div className="apprendre-container">
-            <Hero
-                title={title}
-                description={description}
-                heroImage= {heroImage}
-                buttonText={buttonText}
-            />
-            <h2 className='h2-titre'>Apprendre l'italien après le BAC</h2>
-            <h3 className="h3-Sections">Académie de Paris universités</h3>
-            {universitiesDataParis.map((university, index) => (
-                <UniversityTable key={index} university={university} />
-            ))}
-            <h3 className="h3-Sections">Académie de Créteil universités</h3>
-            {universitiesDataCreteil.map((university, index) => (
-                <UniversityTable key={index} university={university} />
-            ))}
-            <h3 className="h3-Sections">Académie de Versailles universités</h3>
-            {universitiesDataVersailles.map((university, index) => (
-                <UniversityTable key={index} university={university} />
-            ))}
-        </div>
+        <>
+          <TopNavBar />
+            <div className="apprendre-container">
+              <Hero
+                  title={title}
+                  description={description}
+                  heroImage= {heroImage}
+                  buttonText={buttonText}
+              />
+              <h2 className='h2-titre'>Apprendre l'italien après le BAC</h2>
+              <h3 className="h3-Sections">Académie de Paris universités</h3>
+              {universitiesDataParis.map((university, index) => (
+                  <UniversityTable key={index} university={university} />
+              ))}
+              <h3 className="h3-Sections">Académie de Créteil universités</h3>
+              {universitiesDataCreteil.map((university, index) => (
+                  <UniversityTable key={index} university={university} />
+              ))}
+              <h3 className="h3-Sections">Académie de Versailles universités</h3>
+              {universitiesDataVersailles.map((university, index) => (
+                  <UniversityTable key={index} university={university} />
+              ))}
+            </div>
+        </>
     );
 }
 
