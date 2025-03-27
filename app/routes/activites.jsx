@@ -29,7 +29,6 @@ export default function Activités() {
       <Wrapper >
         <div className="whiteBg">
           <div className="container">
-            <div className="row textCenter">
               <div className="col-custom">
                 <BlogBox
                   title= "Concours Dante Dì"

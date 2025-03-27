@@ -1,4 +1,4 @@
-import Hero from '../components/Hero';
+import HeaderPage from "../components/Elements/HeaderPage";
 import '../style/css/index.css';
 import UniversityTable from '../components/UniversityTable';
 import '../style/css/Apprendre.css';
@@ -7,7 +7,6 @@ import TopNavBar from "../components/Nav/TopNavbar";
 
 
 const Apprendre = () => {
-    const title = "Apprendre l'italien";
     const description = "Bienvenue sur notre page apprendre. Découvrez les façons d'apprendre la langue italienne en formation Post-BAC.";
     const buttonText = "Commencer";
 
@@ -128,13 +127,12 @@ const Apprendre = () => {
         <>
           <TopNavBar />
             <div className="apprendre-container">
-              <Hero
-                  title={title}
+              <HeaderPage
+                  h1="l'italien"
+                  h1Green="Apprendre"
                   description={description}
-                  heroImage= {heroImage}
-                  buttonText={buttonText}
+                  headerImage= {heroImage}
               />
-              <h2 className='h2-titre'>Apprendre l'italien après le BAC</h2>
               <h3 className="h3-Sections">Académie de Paris universités</h3>
               {universitiesDataParis.map((university, index) => (
                   <UniversityTable key={index} university={university} />

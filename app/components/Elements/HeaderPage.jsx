@@ -1,7 +1,6 @@
 import {styled} from "styled-components";
 import FullButton from "./FullButton";
 
-export default function HeaderPage({h1, h1Green, description, headerImage}) {
     
     return (
       <HeaderWrapper className="container flexSpaceCenter">
@@ -14,7 +13,6 @@ export default function HeaderPage({h1, h1Green, description, headerImage}) {
             <p>{description}</p>     
             </HeaderP>
             <BtnWrapper>
-              <FullButton title="Voir Plus"/>
             </BtnWrapper>
           </div>
         </LeftSide>
