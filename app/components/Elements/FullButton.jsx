@@ -1,6 +1,17 @@
 import {styled} from "styled-components";
 
+export default function FullButton({ title, action, border,link }) {
   return (
+    <a href={link}>
+      <Wrapper
+        className="animate pointer radius8"
+        onClick={action ? () => action() : null}
+        border={border}
+      >
+        
+        {title}
+      </Wrapper>
+      </a>
   );
 }
 

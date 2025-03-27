@@ -1,6 +1,7 @@
 import {styled} from "styled-components";
 import FullButton from "./FullButton";
 
+export default function HeaderPage({h1, h1Green, description, headerImage, scrollTo}) {
     
     return (
       <HeaderWrapper className="container flexSpaceCenter">
@@ -13,6 +14,7 @@ import FullButton from "./FullButton";
             <p>{description}</p>     
             </HeaderP>
             <BtnWrapper>
+              <FullButton title="Voir Plus" link={scrollTo}/>
             </BtnWrapper>
           </div>
         </LeftSide>

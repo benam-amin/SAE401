@@ -18,6 +18,7 @@ export function HeaderActivités() {
      h1Green = "Activités"
      description = "Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !"
      headerImage = {HeaderImage}
+     scrollTo = "#activites"
      />
   );
 }
@@ -29,6 +30,7 @@ export default function Activités() {
       <Wrapper >
         <div className="whiteBg">
           <div className="container">
+            <div className="row textCenter" id="activites">
               <div className="col-custom">
                 <BlogBox
                   title= "Concours Dante Dì"

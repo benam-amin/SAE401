@@ -132,7 +132,9 @@ const Apprendre = () => {
                   h1Green="Apprendre"
                   description={description}
                   headerImage= {heroImage}
+                  scrollTo="#apprendre"
               />
+              <h2 className='h2-titre' id="apprendre">Apprendre l'italien après le BAC</h2>
               <h3 className="h3-Sections">Académie de Paris universités</h3>
               {universitiesDataParis.map((university, index) => (
                   <UniversityTable key={index} university={university} />

@@ -29,7 +29,7 @@ export default function TopNavbar() {
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
-          <a href="/accueil" className="pointer flexNullCenter">
+          <a href="/" className="pointer flexNullCenter">
             <LogoIcon />
           </a>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -37,7 +37,7 @@ export default function TopNavbar() {
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li>
-              <a href="/accueil">Accueil</a>
+              <a href="/">Accueil</a>
             </li>
             <li>
               <a href="/forum">Forum</a>
