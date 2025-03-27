@@ -22,7 +22,7 @@ export default function Landing() {
       <BrowserRouter>
         <Routes>
         <Route path="/accueil" element={<Accueil />} />
-           <Route path="/" element={<Accueil />} /> 
+          <Route path="/" element={<Accueil />} /> 
           <Route path="Forum" element={<><HeaderForum /><Forum /></>} />
           <Route path="Activités" element={<><HeaderActivités /><Activités /></>} />
           <Route path="Contact" element={<><Contact /><Assoc /><Elu /><Bulletin /></>}/>

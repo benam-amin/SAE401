@@ -4,30 +4,17 @@ import BlogBox from "../Elements/BlogBox";
 import FullButton from "../Elements/FullButton";
 //Assets
 import HeaderImage from "../../img/Header-Activites.jpg";
+import HeaderPage from "../components/Elements/HeaderPage";
 
 export function HeaderActivités() {
 
   return (
-    <HeaderWrapper className="container flexSpaceCenter">
-      <LeftSide className="flexCenter">
-        <div>
-        <h1 className="extraBold font60">
-          <span className="darkColor">Activités</span> culutrelles
-        </h1>
-          <HeaderP className="font15">
-          Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !     </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Voir Plus"/>
-          </BtnWrapper>
-        </div>
-      </LeftSide>
-      <RightSide>
-        <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
-        </ImageWrapper>
-      
-      </RightSide>
-    </HeaderWrapper>
+    <HeaderPage
+     h1 = "culturelles"
+     h1Green = "Activités"
+     description = "Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !"
+     HeaderImage = {HeaderImage}
+     />
   );
 }
 export function Activités() {
