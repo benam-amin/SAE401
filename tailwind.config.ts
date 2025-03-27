@@ -1,7 +1,10 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
+
+  prefix: 'tw-', // Ajoute un préfixe aux classes Tailwind
+
   theme: {
     extend: {
       fontFamily: {
@@ -18,5 +21,8 @@ export default {
       },
     },
   },
+
   plugins: [],
-} satisfies Config;
+};
+
+export default config;

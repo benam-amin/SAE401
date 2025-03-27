@@ -1,6 +1,7 @@
 import HeaderPage from "../components/Elements/HeaderPage";
 import heroImage from '../img/img-venise.jpg';
 import '../style/css/Enseigner.css';
+import '../style/css/index.css';
 
 
 export function HeaderEnseigner() {

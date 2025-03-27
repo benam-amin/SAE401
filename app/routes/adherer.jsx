@@ -1,14 +1,16 @@
-import '../style/css/Adherer.css';; // Importe le fichier CSS pour le composant Adherer
+import '../style/css/Adherer.css'; // Importe le fichier CSS pour le composant Adherer
+import '../style/css/index.css'; // Importe le fichier CSS pour le composant Adherer
 import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
 import adhererImg from '../img/img-adherer.png'; // Chemin vers ton image
 import heroImage from '../img/drapeau_italie.jpg';
 import HeaderPage from "../components/Elements/HeaderPage";
+import TopNavBar from "../components/Nav/TopNavbar";
 
 export function HeaderEnseigner() {
     return (
       <HeaderPage
-      h1 = "Adhérer à notre "
-      h1Green = "association"
+      h1 = "à notre association "
+      h1Green = "Adhérer "
       description = "Bienvenue sur notre page d'adhésion. Découvrez les avantages de devenir membre de notre association."
       headerImage = {heroImage}
       />
@@ -18,7 +20,9 @@ export function HeaderEnseigner() {
 
 const Adherer = () => {
     return (
-        <><HeaderEnseigner />
+        <>
+        <TopNavBar />
+        <HeaderEnseigner />
         <div className="adherer-container">
             
             <div className="adherer-content1">

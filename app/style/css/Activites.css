@@ -1,0 +1,52 @@
+/* Par défaut (col-xs-12) - mobile et plus petit */
+.col-custom {
+    width: 100%;
+  }
+  
+  /* Pour les écrans de petite taille (col-sm-4) */
+  @media (min-width: 576px) {
+    .col-custom {
+      width: 33.3333%; /* 4 sur 12 colonnes */
+    }
+  }
+  
+  /* Pour les écrans moyens (col-md-4) */
+  @media (min-width: 768px) {
+    .col-custom {
+      width: 33.3333%; /* 4 sur 12 colonnes */
+    }
+  }
+  
+  /* Pour les grands écrans (col-lg-4) */
+  @media (min-width: 992px) {
+    .col-custom {
+      width: 33.3333%; /* 4 sur 12 colonnes */
+    }
+  }
+/* .whiteBg */
+.whiteBg {
+    background-color: white;
+  }
+  
+  /* .container */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Exemple, tu peux ajuster la valeur selon tes besoins */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; /* Optionnel pour ajouter un peu d'espace intérieur */
+  }
+  
+  /* .row */
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Pour permettre aux éléments de passer à la ligne si nécessaire */
+    margin-left: -15px; /* Pour compenser le padding des colonnes dans la grille */
+    margin-right: -15px;
+  }
+  
+  /* .textCenter */
+  .textCenter {
+    text-align: center;
+  }
+    

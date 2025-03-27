@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import '../style/css/index.css';
 import UniversityTable from '../components/UniversityTable';
 import '../style/css/Apprendre.css';
 import heroImage from '../img/italie_rome.jpg';

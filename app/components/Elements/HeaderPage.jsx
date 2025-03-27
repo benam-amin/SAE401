@@ -11,7 +11,7 @@ export default function HeaderPage({h1, h1Green, description, headerImage}) {
             <span className="darkColor">{h1Green}</span> {h1}
           </h1>
             <HeaderP className="font15">
-            {description}     
+            <p>{description}</p>     
             </HeaderP>
             <BtnWrapper>
               <FullButton title="Voir Plus"/>

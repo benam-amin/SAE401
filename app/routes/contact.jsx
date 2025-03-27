@@ -1,6 +1,7 @@
 import {styled} from "styled-components";
 // Components
 import ProjectBox from "../components/Elements/ProjectBox";
+import hero from "../components/Hero";
 // Assets
 import ProjectImg1 from "../img/bulletin1.png";
 import ProjectImg2 from "../img/bulletin2.png";
@@ -10,26 +11,32 @@ import ProjectImg5 from "../img/bulletin5.png";
 import ProjectImg6 from "../img/bulletin6.png";
 import HeaderPage from "../components/Elements/HeaderPage";
 import HeaderImage from "../img/Header-Contact.jpg";
+import '../style/css/index.css';
 
 
 function HeaderContact() {
   return (
-      <HeaderPage
-      h1 = "Nous"
-      h1Green = "contacter"
-      description="Pour nous signaler tout changement de coordonnées personnelles (adresse de domicile, téléphone, courriel) ou professionnelles (changement d’établissement de rattachement, de statut, etc.), merci d’envoyer un courriel à :{''}
-          <span className='semiBold'>apirp.association@gmail.com</span>.
+    <HeaderPage
+      h1="contacter"
+      h1Green="Nous"
+      description={
+        <>
+          Pour nous signaler tout changement de coordonnées personnelles (adresse de domicile, téléphone, courriel) ou professionnelles (changement d’établissement de rattachement, de statut, etc.), merci d’envoyer un courriel à :{' '}
+          <span className="semiBold">apirp.association@gmail.com</span>.
           <br />
-          Pour le renouvellement d’adhésion et pour les commandes de plaquettes pour la promotion de l’italien, nos adhérents peuvent aussi se servir des formulaires publiés dans les deux dernières pages de notre bulletin annuel."
-      headerImage = {HeaderImage}
-      />
-    );
+          Pour le renouvellement d’adhésion et pour les commandes de plaquettes pour la promotion de l’italien, nos adhérents peuvent aussi se servir des formulaires publiés dans les deux dernières pages de notre bulletin annuel.
+        </>
+      }
+      headerImage={HeaderImage}
+    />
+  );
 }
 
-export default function Contact() {
+
+export function ContactContenu() {
   return (
     <>
-      <HeaderContact />
+      {/* <HeaderContact /> */}
       <HeaderWrapper className="container flexSpaceCenter">
         <LeftSide className="flexCenter">
           <div>
@@ -259,5 +266,16 @@ export function Bulletin() {
         </div>
       </div>
     </Wrapper>
+  );
+}
+
+export default function Contact() {
+  return (
+    <>
+    <ContactContenu />
+    <Assoc />
+    <Elu />
+    <Bulletin />
+    </>
   );
 }

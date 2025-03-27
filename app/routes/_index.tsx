@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import '../style/css/index.css';
+import TopNavBar from "../components/Nav/TopNavbar";
 
 export const meta: MetaFunction = () => {
   return [
