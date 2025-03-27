@@ -1,9 +1,9 @@
 import styled from "styled-components";
 // Components
-import BlogBox from "../Elements/BlogBox";
-import FullButton from "../Elements/FullButton";
+import BlogBox from "../components/Elements/BlogBox";
+// import FullButton from "./FullButton";
 //Assets
-import HeaderImage from "../../img/Header-Activites.jpg";
+// import HeaderImage from "../../img/Header-Activites.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
 
 export function HeaderActivités() {
