@@ -36,7 +36,7 @@ const Accueil = () => {
       </div>
       {/* <img src='../img/italie_icon.png' alt="Description de l'image"/> */}
 
-      <img className="img" src={require('../img/Italie_icon.png')} alt="Description de l'image" />
+      <img className="img" src={import('../img/Italie_icon.png')} alt="Description de l'image" />
 
       <div className="accueil-container1">
 
@@ -68,7 +68,7 @@ const Accueil = () => {
         {/* Ajoutez les actualités ici en utilisant le composant Actualite */}
         <div className="actualite-box">
           <Actualite
-            image={require('../img/DivinaComedia.jpg')} alt="Description de l'image"
+            image={import('../img/DivinaComedia.jpg')} alt="Description de l'image"
             title="La Divina Commedia"
             description="Con tutto si può giocare, anche con Dante Alighieri e con la Divina Commedia, che sarà pure un'opera drammatica e divina, ma pur sempre commedia resta. Al nutrito gruppo di giochi ispirati alle terzine del Poeta e alla sua favolosa giostra di simboli, di allegorie e di 'location', nell'anno delle celebrazioni per i 700 anni dalla morte si aggiunge un gioco da tavola, un classico gioco dell'oca, che la casa editrice Sei allega a un’edizione rinnovata della Divina Commedia."
             url="https://www.lastampa.it/cultura/2021/01/21/news/la-divina-commedia-diventa-un-gioco-da-tavolo-come-quello-dell-oca-1.39802733"
@@ -76,7 +76,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/zerocalcare.jpg')} alt="Description de l'image"
+            image={import('../img/zerocalcare.jpg')} alt="Description de l'image"
             title="Zerocalcare sur Netflix"
             description="L'arrivo della serie animata di Zerocalcare su Netflix, intitolata “Strappare lungo i bordi”, è previsto per il 2021 e il colosso ne ha annunciato l'uscita attraverso un mini teaser trailer ufficiale postato sui canali social."
             url="https://youtu.be/c0p3iwtw9tU"
@@ -84,7 +84,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/greenPea.jpg')} alt="Description de l'image"
+            image={import('../img/greenPea.jpg')} alt="Description de l'image"
             title="Green Pea apre a Torino l’8 dicembre"
             description="L’attesissimo centro commerciale (secondo le intenzioni di chi l’ha ideato meglio parlare di “green retail park”) della famiglia Farinetti esordirà a Torino il prossimo 8 dicembre, accanto a Eataly Lingotto: quindicimila metri quadri, articolati su cinque piani, per raccontare – e vendere – il vivere sostenibile. ."
             url="https://www.gamberorosso.it/notizie/green-pea-apre-a-torino-l8-dicembre-ecco-cose-la-scommessa-ecologica-di-farinetti/"
@@ -92,7 +92,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/sergio.jpg')} alt="Description de l'image"
+            image={import('../img/sergio.jpg')} alt="Description de l'image"
             title="Sergio Mattarella: «Dante, nostro contemporaneo. Così la sua voce parla al futuro»"
             description="La musica per rendere omaggio al Sommo poeta. È accaduto sabato 3 ottobre, a Roma, nel cortile d’onore del Quirinale, in occasione delle celebrazioni per i 700 anni dalla morte di Dante, nato a Firenze nel 1265 e scomparso a Ravenna nel 1321."
             url="https://www.corriere.it/cultura/20_ottobre_03/sergio-mattarella-dante-nostro-contemporaneo-cosi-sua-voce-parla-futuro-5416bf66-05a5-11eb-867c-57744a2cabe2.shtml"
@@ -100,7 +100,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/dal.jpg')} alt="Description de l'image"
+            image={import('../img/dal.jpg')} alt="Description de l'image"
             title="Dal 2021 riapre al pubblico il corridoio più famoso del mondo"
             description="Nel 2021 aprirà al pubblico una gemma del patrimonio artistico italiano, il corridoio più imponente e famoso al mondo : il corridoio vasariano.  "
             url="https://it.businessinsider.com/corridoio-vasariano-firenze-palazzo-vecchio-uffici-palazzo-pitti-ponte-vecchio-2021-riapertura/ "
@@ -108,7 +108,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/raffaelloSuperstar.jpg')} alt="Description de l'image"
+            image={import('../img/raffaelloSuperstar.jpg')} alt="Description de l'image"
             title="Raffaello superstar, a Roma la più grande mostra con cento capolavori"
             description="Le Scuderie del Quirinale celebreranno Raffaello Sanzio con la più spettacolare monografia a lui mai dedicata. Una maxi-mostra che dal 5 marzo 2020 esporrà duecento opere tra dipinti, disegni e opere di confronto, per la prima volta riuniti tutte insieme, con 100 capolavori del maestro provenienti dagli Uffizi e da numerosi altri musei."
             url="https://roma.repubblica.it/cronaca/2019/12/25/news/raffaello_superstar_a_roma_la_piu_grande_mostra_con_cento_capolavori-244337923/?refresh_ce"
@@ -116,7 +116,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/lupi.jpg')} alt="Description de l'image"
+            image={import('../img/lupi.jpg')} alt="Description de l'image"
             title="I lupi di Liu Ruowang invadono Napoli"
             description="Cento grandi lupi di metallo assediano minacciosi la statua di un guerriero in piazza Municipio a Napoli. "
             url="http://www.rainews.it/dl/rainews/media/Cento-lupi-in-piazza-Municipio-a-Napoli-la-natura-che-si-ribella-all-uomo-7a4ad6e0-29a7-42ed-824b-d74e0b326cab.html#foto-3 "
@@ -124,7 +124,7 @@ const Accueil = () => {
         </div>
         <div className="actualite-box">
           <Actualite
-            image={require('../img/portata.jpg')} alt="Description de l'image"
+            image={import('../img/portata.jpg')} alt="Description de l'image"
             title="Portata alla luce un’altra villa romana a Enna"
             description="Con l’installazione della copertura si sono conclusi i lavori – finanziati dalla Regione Siciliana – di sistemazione dell’area archeologica della Villa romana di contrada Gerace a Enna. "
             url="http://www.custonaciweb.it/portata-alla-luce-unaltra-villa-romana-a-enna-si-trova-a-15-km-dalla-villa-del-casale-di-piazza-armerina/?fbclid=IwAR2WLelaVEdbJzGPh-KL5CQNjpqOG56KqKzdn5B5NKO5egKzecj5hkkMiBc"
