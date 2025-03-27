@@ -7,7 +7,7 @@ import Accueil from "../components/Accueil";
 import Adherer from "../components/Adherer";
 import Apprendre from "../components/Apprendre";
 import Divers from "../components/Divers";
-import Enseigner from "../components/Enseigner";
+import {HeaderEnseigner, Enseigner} from "../components/Enseigner";
 import { HeaderActivités, Activités } from "../components/Sections/Activités";
 import { Assoc, Bulletin, Contact, Elu } from "../components/Sections/Contact";
 import { HeaderPromouvoir, Promouvoir } from "../components/Sections/Promouvoir";
@@ -29,7 +29,7 @@ export default function Landing() {
           <Route path="/adherer" element={<Adherer />} />
           <Route path="Promouvoir" element={<><HeaderPromouvoir /><Promouvoir /></>} />
           <Route path="/apprendre" element={<Apprendre />} />
-          <Route path="/enseigner" element={<Enseigner />} />
+          <Route path="/enseigner" element={<><HeaderEnseigner /> <Enseigner /></>} />
           <Route path="/divers" element={<Divers />} />
         </Routes>
       </BrowserRouter>

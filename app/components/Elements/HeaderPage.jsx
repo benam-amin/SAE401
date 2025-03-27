@@ -1,4 +1,4 @@
-export function HeaderPage({h1, h1Green, description, HeaderImage}) {
+export function HeaderPage({h1, h1Green, description, headerImage}) {
 
     return (
       <HeaderWrapper className="container flexSpaceCenter">

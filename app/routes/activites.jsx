@@ -13,7 +13,7 @@ export function HeaderActivités() {
      h1 = "culturelles"
      h1Green = "Activités"
      description = "Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !"
-     HeaderImage = {HeaderImage}
+     headerImage = {HeaderImage}
      />
   );
 }
