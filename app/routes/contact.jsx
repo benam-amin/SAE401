@@ -1,7 +1,6 @@
 import {styled} from "styled-components";
 // Components
 import ProjectBox from "../components/Elements/ProjectBox";
-import hero from "../components/Hero";
 import TopNavBar from "../components/Nav/TopNavbar";
 // Assets
 import ProjectImg1 from "../img/bulletin1.png";

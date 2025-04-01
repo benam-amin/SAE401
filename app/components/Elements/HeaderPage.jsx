@@ -1,7 +1,8 @@
 import {styled} from "styled-components";
 import FullButton from "./FullButton";
 
-export default function HeaderPage({h1, h1Green, description, headerImage, scrollTo}) {
+//permet d'afficher la section Header, permets une uniformisation des styles
+export default function HeaderPage({h1, h1Green, description, headerImage, scrollTo}) { 
     
     return (
       <HeaderWrapper className="container flexSpaceCenter">
@@ -29,11 +30,11 @@ export default function HeaderPage({h1, h1Green, description, headerImage, scrol
 }
 
 const HeaderWrapper = styled.section`
-  padding-top: 80px;
   width: 100%;
   min-height: 840px;
   @media (max-width: 960px) {
     flex-direction: column;
+    margin-top:50px;
   }
 `;
 const LeftSide = styled.div`
@@ -65,7 +66,7 @@ const HeaderP = styled.div`
   line-height: 1.5rem;
   @media (max-width: 960px) {
     padding: 15px 0 50px 0;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
   }
 `;
