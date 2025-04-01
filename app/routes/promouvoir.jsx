@@ -1,10 +1,13 @@
 import {styled} from "styled-components";
 // Components
-import FullButton from "../Elements/FullButton";
+import FullButton from "../components/Elements/FullButton";
+
 // Assets
-import AddImage2 from "../../assets/img/Promouvoir/Promouvoir-1.jpg";
-import HeaderImage from "../../assets/img/Promouvoir/Header-Promouvoir.jpg";
-import AddImage3 from "../../assets/img/Promouvoir/Promouvoir-2.jpg";
+import AddImage2 from "../img/Promouvoir-1.jpg";
+import AddImage3 from "../img/Promouvoir-2.jpg";
+import HeaderPage from "../components/Elements/HeaderPage";
+import heroImage from '../img/Header-Promouvoir.jpg';
+import '../style/css/Enseigner.css';
 
 export function HeaderPromouvoir() {
     return (
@@ -91,69 +94,72 @@ const Img = styled.img`
   }
 `;
 
-export function Promouvoir() {
+export default function Promouvoir() {
   return (
-    <Wrapper id="projects">
-      <div className="whiteBg">
-        <div className="container">
-        <HeaderInfo>
-            <h1 className="font40 extraBold">La plaquette éditée par l'APIRP</h1>
-            <p className="font15"> <br />
-            L'APIRP a édité un dépliant pour la promotion de l'apprentissage de la langue italienne dans les établissements scolaires de l'Île-de-France.
-            </p>
-          </HeaderInfo>
+    <>
+        <HeaderPromouvoir />
+        <Wrapper id="projects">
+        <div className="whiteBg">
+            <div className="container">
+            <HeaderInfo>
+                <h1 className="font40 extraBold">La plaquette éditée par l'APIRP</h1>
+                <p className="font15"> <br />
+                L'APIRP a édité un dépliant pour la promotion de l'apprentissage de la langue italienne dans les établissements scolaires de l'Île-de-France.
+                </p>
+            </HeaderInfo>
+            </div>
         </div>
-      </div>
-      <div className="lightBg">
-        <div className="container">
-          <Advertising className="flexSpaceCenter">
-            <AddLeft>
+        <div className="lightBg">
+            <div className="container">
+            <Advertising className="flexSpaceCenter">
+                <AddLeft>
+                    <ImgWrapper className="flexCenter">
+                    <img className="radius8" src={AddImage2} alt="add" />
+                    </ImgWrapper>
+                </AddLeft>
+                <AddRight>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
+                    <img className="radius8" src={AddImage3} alt="add" />
                 </ImgWrapper>
+                </AddRight>
+            </Advertising>
+            </div>
+            </div>
+            <div className="lightBg">
+            <div className="container">
+            <Advertising className="flexSpaceCenter">
+            <AddLeft>
+                <h4 className="font15"> <br />
+                Télécharger le bon de commande pour pouvoir commander les dépliants :
+                </h4>
             </AddLeft>
             <AddRight>
-            <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage3} alt="add" />
-            </ImgWrapper>
-            </AddRight>
-          </Advertising>
-          </div>
-          </div>
-          <div className="lightBg">
-        <div className="container">
-          <Advertising className="flexSpaceCenter">
-          <AddLeft>
-            <h4 className="font15"> <br />
-            Télécharger le bon de commande pour pouvoir commander les dépliants :
-            </h4>
-          </AddLeft>
-          <AddRight>
-          <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
-                  <div style={{ width: "190px" }}>
-                    <FullButton title="Adhérent"action={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsMGlEcmFFWlJmY1E/view?resourcekey=0-19mliwKeZAoPK9XBmNVPwg', '_blank')} />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Non adhérent" action={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsd2xZM3dxclI2UTg/view?resourcekey=0-AK-KZe_UzMKDFomtWhSyGA', '_blank')}  />
-                  </div>
-          </ButtonsRow>
-          </AddRight>
-          </Advertising>
-        </div>
-      </div>
-      <div className="whiteBg">
-        <div className="container">
-          <HeaderInfo >
-            <h4 className="font15">Réponses au Quizz de la plaquette</h4>
             <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <button className="button1" onClick={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsd2psVS1tN3plaFU/view?resourcekey=0-nlUxtG1Hf7kOX6BhtZuY2w', '_blank')}> Les réponses </button>
-                  </div>
+                    <div style={{ width: "190px" }}>
+                        <FullButton title="Adhérent"action={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsMGlEcmFFWlJmY1E/view?resourcekey=0-19mliwKeZAoPK9XBmNVPwg', '_blank')} />
+                    </div>
+                    <div style={{ width: "190px", marginLeft: "15px" }}>
+                        <FullButton title="Non adhérent" action={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsd2xZM3dxclI2UTg/view?resourcekey=0-AK-KZe_UzMKDFomtWhSyGA', '_blank')}  />
+                    </div>
             </ButtonsRow>
-          </HeaderInfo>
-          </div>
-      </div>
-    </Wrapper>
+            </AddRight>
+            </Advertising>
+            </div>
+        </div>
+        <div className="whiteBg">
+            <div className="container">
+            <HeaderInfo >
+                <h4 className="font15">Réponses au Quizz de la plaquette</h4>
+                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                    <div style={{ width: "190px", marginLeft: "15px" }}>
+                        <button className="button1" onClick={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJsd2psVS1tN3plaFU/view?resourcekey=0-nlUxtG1Hf7kOX6BhtZuY2w', '_blank')}> Les réponses </button>
+                    </div>
+                </ButtonsRow>
+            </HeaderInfo>
+            </div>
+        </div>
+        </Wrapper>
+    </>
   );
 }
 
