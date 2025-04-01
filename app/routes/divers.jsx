@@ -13,7 +13,8 @@ const DiversPage = () => {
   };
 
   return (
-
+    <>
+    <TopNavBar />
     <div className="divers-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2 className='h2-titre'>Connexion</h2>
@@ -44,6 +45,7 @@ const DiversPage = () => {
         className="login-image img"
       />
     </div>
+    </>
   );
 };
 
