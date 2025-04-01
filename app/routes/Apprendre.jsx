@@ -15,7 +15,7 @@ const Apprendre = () => {
         {
             name: "Université Paris 3 Sorbonne Nouvelle",
             logo: '../img/logo_UNI_SorbonneNouvelle.png',
-            website: "https://www.exemple1.com",
+            website: "https://www.sorbonne-nouvelle.fr/",
             courses: 
             <ul>
               <li>Licence LLCER d'italien</li>
@@ -30,7 +30,7 @@ const Apprendre = () => {
         {
             name: "Université Paris IV-Sorbonne",
             logo: '../img/logo_UNI_ParisSorbonne.png',
-            website: "https://www.exemple2.com",
+            website: "https://www.sorbonne-universite.fr/",
             courses: 
             <ul>
               <li>Deux parcours de spécialité (1. Littérature et culture ; 2. Langue et Traduction)</li>
@@ -76,7 +76,7 @@ const Apprendre = () => {
         {
             name: "Université Paris X Nanterre",
             logo: '../img/logo_UNI_Nanterre.png',
-            website: "https://dep-italien.parisnanterre.fr",
+            website: "https://www.parisnanterre.fr/",
             courses: 
             <ul>
               <li>LLCER  (Licence mention langues, littératures et civilisations étrangères et régionales)
