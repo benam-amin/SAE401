@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import '../style/css/Divers.css';
+import image from '../img/paysage_italie.jpg';
+import TopNavBar from "../components/Nav/TopNavbar";
 
 const DiversPage = () => {
   const [username, setUsername] = useState('');
@@ -11,6 +13,7 @@ const DiversPage = () => {
   };
 
   return (
+
     <div className="divers-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2 className='h2-titre'>Connexion</h2>
@@ -36,7 +39,7 @@ const DiversPage = () => {
       </form>
       {/* Image ajoutée pour l'esthétique */}
       <img
-        src={require('../img/paysage_italie.jpg')}
+        src={image}
         alt="Image d'illustration"
         className="login-image img"
       />

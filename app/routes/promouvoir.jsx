@@ -7,6 +7,7 @@ import AddImage2 from "../img/Promouvoir-1.jpg";
 import AddImage3 from "../img/Promouvoir-2.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
 import heroImage from '../img/Header-Promouvoir.jpg';
+import TopNavBar from "../components/Nav/TopNavbar";
 import '../style/css/Enseigner.css';
 
 export function HeaderPromouvoir() {
@@ -97,6 +98,7 @@ const Img = styled.img`
 export default function Promouvoir() {
   return (
     <>
+        <TopNavBar />
         <HeaderPromouvoir />
         <Wrapper id="projects">
         <div className="whiteBg">
