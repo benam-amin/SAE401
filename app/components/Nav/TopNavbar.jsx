@@ -72,7 +72,6 @@ export default function TopNavbar() {
 
 const Wrapper = styled.nav`
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -90,7 +89,7 @@ const BurderWrapper = styled.button`
   height: 100%;
   padding: 0 15px;
   display: none;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     display: block;
   }
 `;
@@ -99,7 +98,8 @@ const UlWrapper = styled.ul`
   display: flex;
   gap: 1rem;
   font-weight: 600;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
+    
     display: none;
   }
 `;
