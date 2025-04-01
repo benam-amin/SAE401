@@ -8,86 +8,77 @@ import Backdrop from "../Elements/Backdrop";
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 
+// Menus en tableau pour la lisibilité
+const menuItems = [
+  { label: "Accueil", path: "/" },
+  { label: "Forum", path: "/forum" },
+  { label: "Activités", path: "/activites" },
+  { label: "Nous connaître", path: "/contact" },
+  { label: "Adhérer", path: "/adherer" },
+  { label: "Promouvoir", path: "/promouvoir" },
+  { label: "Apprendre", path: "/apprendre" },
+  { label: "Enseigner", path: "/enseigner" },
+  { label: "Divers", path: "/divers" },
+];
+
 export default function TopNavbar() {
   const [y, setY] = useState(0);
-  const [sidebarOpen, toggleSidebar] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // L'accès à `window` ne sera fait que côté client
-      const handleScroll = () => setY(window.scrollY);
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
+    const handleScroll = () => setY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-      {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
-        <NavInner className="container flexSpaceCenter">
+      <Sidebar $sidebaropen={sidebarOpen} toggleSidebar={setSidebarOpen} />
+      {sidebarOpen && <Backdrop toggleSidebar={setSidebarOpen} />}
+      <WrapperNav style={{ height: y > 100 ? "60px" : "80px" }}>
+        <NavInner>
           <a href="/" className="pointer flexNullCenter">
             <LogoIcon />
           </a>
-          <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
+          <BurgerWrapper onClick={() => setSidebarOpen(true)}>
             <BurgerIcon />
-          </BurderWrapper>
-          <UlWrapper className="flexNullCenter">
-            <li>
-              <a href="/">Accueil</a>
-            </li>
-            <li>
-              <a href="/forum">Forum</a>
-            </li>
-            <li>
-              <a href="/activites">Activités</a>
-            </li>
-            <li>
-              <a href="/contact">Nous connaître</a>
-            </li>
-            <li>
-              <a href="/adherer">Adhérer</a>
-            </li>
-            <li>
-              <a href="/promouvoir">Promouvoir</a>
-            </li>
-            <li>
-              <a href="/apprendre">Apprendre</a>
-            </li>
-            <li>
-              <a href="/enseigner">Enseigner</a>
-            </li>
-            <li>
-              <a href="/divers">Divers</a>
-            </li>
+          </BurgerWrapper>
+          <UlWrapper>
+            {menuItems.map(({ label, path }) => (
+              <li key={path}>
+                <a href={path}>{label}</a>
+              </li>
+            ))}
           </UlWrapper>
         </NavInner>
-      </Wrapper>
+      </WrapperNav>
     </>
   );
 }
 
-const Wrapper = styled.nav`
+const WrapperNav = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  transition: height 0.3s ease;
 `;
 
 const NavInner = styled.div`
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
+  padding: 0 20px;
 `;
 
-const BurderWrapper = styled.button`
+const BurgerWrapper = styled.button`
   outline: none;
-  border: 0px;
-  background-color: transparent;
-  height: 100%;
-  padding: 0 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
   display: none;
   @media (max-width: 800px) {
     display: block;
@@ -99,7 +90,6 @@ const UlWrapper = styled.ul`
   gap: 1rem;
   font-weight: 600;
   @media (max-width: 800px) {
-    
     display: none;
   }
 `;

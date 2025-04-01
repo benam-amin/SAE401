@@ -85,11 +85,10 @@ const Accueil = () => {
       <TopNavBar />
       <div className="accueil-container">
         <div className="hero">
-          <img className="background-image" src={italieIcon} alt="Background" />
-          <div className="hero-content">
+          {/* <div className="hero-content">
             <h1>Apirp</h1>
             <p>Association des Professeurs d'Italien de la Région Parisienne</p>
-          </div>
+          </div> */}
         </div>
         <div className="accueil-container1">
           <h1 className="h1">Bienvenue sur notre site</h1>
