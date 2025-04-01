@@ -45,7 +45,7 @@ const Apprendre = () => {
         {
             name: " I.U.T. de Saint Denis - Campus de La Plaine",
             logo: '../img/logo_IUT_StDenis.png',
-            website: "www.iutsd.univ-paris13.fr/",
+            website: "https://iutsd.univ-paris13.fr/",
             courses: 
             <ul>
               <li>Cursus Techniques de commercialisation</li>
