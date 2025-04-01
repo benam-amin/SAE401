@@ -4,13 +4,12 @@ import '../style/css/Enseigner.css';
 import '../style/css/index.css';
 import TopNavBar from "../components/Nav/TopNavbar";
 
-
 export function HeaderEnseigner() {
   return (
     <HeaderPage
     h1 = "grâce à notre association"
     h1Green = "Enseigner"
-    description = "Bienvenue sur notre page dédier à l'enseignement. Découvrez les avantages de devenir membre de notre association."
+    description = "Bienvenue sur notre page dédiée à l'enseignement. Découvrez les avantages de devenir membre de notre association."
     headerImage = {heroImage}
     />
   );
