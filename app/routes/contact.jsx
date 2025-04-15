@@ -11,7 +11,7 @@ import ProjectImg5 from "../img/bulletin5.png";
 import ProjectImg6 from "../img/bulletin6.png";
 import HeaderPage from "../components/Elements/HeaderPage";
 import HeaderImage from "../img/Header-Contact.jpg";
-import '../style/css/index.css';
+import '../style/css/main.css';
 
 
 function HeaderContact() {

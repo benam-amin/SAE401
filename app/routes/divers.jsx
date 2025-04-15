@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../style/css/Divers.css';
+import '../style/css/main.css';
 import image from '../img/paysage_italie.jpg';
 import TopNavBar from "../components/Nav/TopNavbar";
 

@@ -6,9 +6,8 @@ import BlogBox from "../components/Elements/BlogBox";
 //Assets
 import HeaderImage from "../img/Header-Activites.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
-import '../style/css/Enseigner.css';
 import '../style/css/Activites.css';
-import '../style/css/index.css';
+import '../style/css/main.css';
 
 export function HeaderActivités() {
 

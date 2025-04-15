@@ -3,7 +3,6 @@ import FullButton from "./FullButton";
 
 //permet d'afficher la section Header, permets une uniformisation des styles
 export default function HeaderPage({h1, h1Green, description, headerImage, scrollTo}) { 
-    
     return (
       <HeaderWrapper className="container flexSpaceCenter">
         <LeftSide className="flexCenter">
@@ -12,7 +11,7 @@ export default function HeaderPage({h1, h1Green, description, headerImage, scrol
             <span className="darkColor">{h1Green}</span> {h1}
           </h1>
             <HeaderP className="font15">
-            <p>{description}</p>     
+            <p>{description}</p>
             </HeaderP>
             <BtnWrapper>
               <FullButton title="Voir Plus" link={scrollTo}/>
@@ -23,7 +22,6 @@ export default function HeaderPage({h1, h1Green, description, headerImage, scrol
           <ImageWrapper>
             <Img className="radius8" src={headerImage} alt="office" style={{zIndex: 9}} />
           </ImageWrapper>
-        
         </RightSide>
       </HeaderWrapper>
     );

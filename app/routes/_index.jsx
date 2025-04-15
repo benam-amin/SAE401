@@ -1,6 +1,6 @@
 
 import '../style/css/Accueil.css';
-import '../style/css/index.css';
+import '../style/css/main.css';
 import { useLoaderData } from "@remix-run/react";
 import TopNavBar from "../components/Nav/TopNavbar";
 import TabImg from "../components/TabImg";
@@ -12,9 +12,6 @@ const images = import.meta.glob("../img/*", { eager: true, import: "default" });
 //récupère les images, plus soigné pour les imports
 export const loader = async () => {
   return {
-    image: images["../img/drapeau_italie2.jpg"],
-    italieIcon: images["../img/Italie_icon.png"],
-    divinaComedia: images["../img/DivinaComedia.jpg"],
     actualites: [
       {
         image: images["../img/DivinaComedia.jpg"],
@@ -78,7 +75,7 @@ export const loader = async () => {
 
 const Accueil = () => {
   //permet d'utiliser le retour de la fonction loader
-  const { image, italieIcon, actualites } = useLoaderData();
+  const { image, actualites } = useLoaderData();
 
   return (
     <>

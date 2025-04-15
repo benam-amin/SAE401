@@ -1,8 +1,7 @@
-import React from 'react';
 import HeaderPage from "../components/Elements/HeaderPage";
-import '../style/css/index.css';
 import UniversityTable from '../components/UniversityTable';
 import '../style/css/Apprendre.css';
+import '../style/css/main.css';
 import heroImage from '../img/italie_rome.jpg';
 import TopNavBar from "../components/Nav/TopNavbar";
 
@@ -14,7 +13,8 @@ import logoParis8 from '../img/logo_UNI_Paris8.png';
 import logoNanterre from '../img/logo_UNI_Nanterre.png';
 import logoStQuentin from '../img/logo_UNI_StQuentin.png';
 import logoEvry from '../img/logo_UNI_Evry.png';
-
+// Chargement dynamique des images
+const images = import.meta.glob("../img/*", { eager: true, import: "default" });
 const Apprendre = () => {
     const description = "Bienvenue sur notre page apprendre. Découvrez les façons d'apprendre la langue italienne en formation Post-BAC.";
     const buttonText = "Commencer";

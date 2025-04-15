@@ -9,6 +9,7 @@ import HeaderPage from "../components/Elements/HeaderPage";
 import heroImage from '../img/Header-Promouvoir.jpg';
 import TopNavBar from "../components/Nav/TopNavbar";
 import '../style/css/Enseigner.css';
+import '../style/css/main.css';
 
 export function HeaderPromouvoir() {
     return (

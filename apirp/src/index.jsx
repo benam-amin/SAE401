@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style/css/flexboxgrid.min.css";
-import './style/css/index.css';
+import './style/css/main.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

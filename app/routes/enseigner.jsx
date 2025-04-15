@@ -1,7 +1,7 @@
 import HeaderPage from "../components/Elements/HeaderPage";
 import heroImage from '../img/img-venise.jpg';
 import '../style/css/Enseigner.css';
-import '../style/css/index.css';
+import '../style/css/main.css';
 import TopNavBar from "../components/Nav/TopNavbar";
 
 export function HeaderEnseigner() {
