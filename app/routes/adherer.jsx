@@ -4,7 +4,8 @@ import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
 import adhererImg from '../img/img-adherer.png'; // Chemin vers ton image
 import heroImage from '../img/drapeau_italie.jpg';
 import HeaderPage from "../components/Elements/HeaderPage";
-import { ChampTexte, ChampRadio }  from "../components/Elements/Formulaire_champ";
+import Formulaire from "../components/Elements/formulaireAdhesion";
+
 
 
 export function HeaderEnseigner() {
@@ -59,61 +60,7 @@ const Adherer = () => {
 
                 <button className="button" onClick={() => window.open(FicheAdhesionPDF, '_blank')}>Télécharger la fiche d'adhésion</button>
             </div>
-            <div id="formulaire">
-                <form action='#' method='GET'>
-                    <ChampTexte
-                        id = "nom"
-                        label = "Nom"
-                        type = "texte"
-                    />
-                    <ChampTexte
-                        id = "prenom"
-                        label = "Prénom"
-                        type = "texte"
-                    />
-                    <ChampTexte
-                        id = "adresse"
-                        label = "Adresse"
-                        type = "texte"
-                    />
-                    <ChampTexte
-                        id = "telephone"
-                        label = "Numéro de téléphone"
-                        type = "tel"
-                    />
-                    <ChampTexte
-                        id = "mail"
-                        label = "Adresse email"
-                        type = "email"
-                    />
-                    <ChampTexte
-                        id = "etablissement"
-                        label = "Etablissement"
-                        type = "texte"
-                    />
-                    <p>Type d'établissement : </p>
-                    <ChampRadio
-                        id = "type_etablissement"
-                        label = "Privé"
-                    />
-                    <ChampRadio
-                        id = "type_etablissement"
-                        label = "Public"
-                    />
-                    <p>Type de contrat : </p>
-                    <ChampRadio
-                        id = "contrat"
-                        label = "Adhésion"
-                    />
-                    <ChampRadio
-                        id = "contrat"
-                        label = "Renouvellement"
-                    />
-
-                </form>
-
-                
-            </div>
+            <Formulaire />
         </div>
         </>
     );

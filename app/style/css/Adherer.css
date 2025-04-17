@@ -85,34 +85,5 @@
     margin-bottom: 30px;
 }
 
-.input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem; 
-    width: 50rem;
-  }
   
-  .input label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-        text-transform: uppercase;
-  }
-  
-  .input input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .input_radio label {
-    margin-bottom: 0.5rem;
-  }
-  
-  .input_radio input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
   

@@ -17,7 +17,7 @@ const DiversPage = () => {
     <>
     
     <div className="divers-container">
-      <form className="login-form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <h2 className='h2-titre'>Connexion</h2>
         <div className="form-group">
           <label htmlFor="username">Nom d'utilisateur</label>
