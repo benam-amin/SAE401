@@ -1,38 +1,33 @@
-import {styled} from "styled-components";
-// Components
-
+import React from 'react';
 import BlogBox from "../components/Elements/BlogBox";
-// import FullButton from "./FullButton";
-//Assets
 import HeaderImage from "../img/Header-Activites.jpg";
 import HeaderPage from "../components/Elements/HeaderPage";
 import '../style/css/Activites.css';
 import '../style/css/main.css';
 
 export function HeaderActivités() {
-
   return (
     <HeaderPage
-     h1 = "culturelles"
-     h1Green = "Activités"
-     description = "Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !"
-     headerImage = {HeaderImage}
-     scrollTo = "#activites"
-     />
+      h1="culturelles"
+      h1Green="Activités"
+      description="Bienvenue sur notre page activités culturelles. Explorez la richesse culturelle italienne : concerts envoûtants, expositions captivantes, et littérature inspirante !"
+      headerImage={HeaderImage}
+      scrollTo="#activites"
+    />
   );
 }
+
 export default function Activités() {
   return (
     <>
-    
-    <HeaderActivités />
-      <Wrapper >
-        <div className="whiteBg">
+      <HeaderActivités />
+      <section className="wrapper">
+        <div className="white-bg">
           <div className="container">
-            <div className="row textCenter" id="activites">
+            <div className="row text-center" id="activites">
               <div className="col-custom">
                 <BlogBox
-                  title= "Concours Dante Dì"
+                  title="Concours Dante Dì"
                   text="Le Consulat Général d’Italie à Paris, en collaboration avec l’Institut Culturel Italien de Paris, lance le concours DANTE DÌ à l’occasion du Septième Centenaire de la mort de Dante, organisé par la Société Dante Alighieri - Comites.[...]"
                   tag="Lire plus"
                   action={() => alert("clicked")}
@@ -41,7 +36,7 @@ export default function Activités() {
               <div className="col-custom">
                 <BlogBox
                   title="Paolo Fresu et Daniele di Bonaventura en concert."
-                  text="Mercredi  21 Oct 2020 de 19h à 20h30, l'IIC (50, rue de Varenne) nous invite au concert de Paolo Fresu et Daniele di Bonaventura. Paolo Fresu est l’un des plus grands trompettistes de jazz d’aujourd’hui.[...]"
+                  text="Mercredi 21 Oct 2020 de 19h à 20h30, l'IIC (50, rue de Varenne) nous invite au concert de Paolo Fresu et Daniele di Bonaventura. Paolo Fresu est l’un des plus grands trompettistes de jazz d’aujourd’hui.[...]"
                   tag="Lire plus"
                   action={() => alert("clicked")}
                 />
@@ -55,7 +50,7 @@ export default function Activités() {
                 />
               </div>
             </div>
-            <div className="row textCenter">
+            <div className="row text-center">
               <div className="col-custom">
                 <BlogBox
                   title="Italissimo 2020"
@@ -83,8 +78,7 @@ export default function Activités() {
               <div className="col-custom">
                 <BlogBox
                   title="Erri De Luca, au MK2 Bibliothèque"
-                  text="
-                  L’écrivain italien Erri De Luca sera au mk2 Bibliothèque (Paris 13° ) du vendredi 18 au dimanche 20 septembre 2020 pour une série de trois entretiens et la projection d’un film qu’il présentera.[...]"
+                  text="L’écrivain italien Erri De Luca sera au mk2 Bibliothèque (Paris 13° ) du vendredi 18 au dimanche 20 septembre 2020 pour une série de trois entretiens et la projection d’un film qu’il présentera.[...]"
                   tag="Lire plus"
                   action={() => alert("clicked")}
                 />
@@ -106,21 +100,14 @@ export default function Activités() {
                 />
               </div>
             </div>
-          <div className="row flexCenter">
+            <div className="row flex-center">
               <div style={{ margin: "50px 0", width: "200px" }}>
                 {/*<FullButton title="Load More" action={() => alert("clicked")} />*/}
               </div>
-              </div>
+            </div>
           </div>
         </div>
-      </Wrapper>
+      </section>
     </>
   );
 }
-
-
-
-const Wrapper = styled.section`
-  width: 100%;
-  padding-top: 20px;
-`;

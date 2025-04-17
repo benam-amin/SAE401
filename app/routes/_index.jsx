@@ -2,7 +2,6 @@
 import '../style/css/Accueil.css';
 import '../style/css/main.css';
 import { useLoaderData } from "@remix-run/react";
-import TopNavBar from "../components/Nav/TopNavbar";
 import TabImg from "../components/TabImg";
 import Actualite from "../components/Actualite";
 

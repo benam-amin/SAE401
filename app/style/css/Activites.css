@@ -49,4 +49,52 @@
   .textCenter {
     text-align: center;
   }
-    
+/* Activités Styles */
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-custom {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+  .col-custom {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 640px) {
+  .col-custom {
+    flex: 1 1 100%;
+  }
+}
