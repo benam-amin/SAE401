@@ -1,0 +1,32 @@
+/* Button styles */
+.full-button {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #cd212a;
+    background-color: #cd212a;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .full-button.border {
+    border: 1px solid #7b151a;
+    background-color: transparent;
+    color: #7b151a;
+  }
+  
+  .full-button.border:hover {
+    background-color: transparent;
+    border: 1px solid #7b151a;
+    color: #cd212a;
+  }
+  
+  .full-button:hover {
+    background-color: #7b151a;
+    border: 1px solid #7b151a;
+    color: #fff;
+  }
+  

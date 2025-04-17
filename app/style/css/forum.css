@@ -1,0 +1,156 @@
+/* Wrapper */
+.forum-wrapper {
+    width: 100%;
+  }
+  
+  /* Advertising Section */
+  .advertising {
+    padding: 100px 0;
+    margin: 100px 0;
+    position: relative;
+  }
+  
+  .advertising .add-left {
+    position: relative;
+    width: 50%;
+  }
+  
+  .add-left p {
+    max-width: 475px;
+  }
+  
+  .add-left-inner {
+    width: 100%;
+    position: absolute;
+    top: -300px;
+    left: 0;
+  }
+  
+  .img-wrapper {
+    width: 100%;
+    padding: 0 15%;
+  }
+  
+  .img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .add-right {
+    width: 50%;
+  }
+  
+  .add-right h4 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .add-right h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+  }
+  
+  .add-right p {
+    font-size: 12px;
+  }
+  
+  .buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .buttons-row div {
+    width: 190px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1160px) {
+    .advertising {
+      padding: 60px 0 40px 0;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .advertising {
+      flex-direction: column;
+      padding: 0 0 30px 0;
+      margin: 80px 0 0px 0;
+    }
+  
+    .add-left,
+    .add-right {
+      width: 80%;
+    }
+  
+    .add-left {
+      order: 2;
+      text-align: center;
+    }
+  
+    .add-left p {
+      margin: 0 auto;
+    }
+  
+    .buttons-row {
+      justify-content: space-between;
+    }
+  
+    .add-left-inner {
+      order: 1;
+      position: relative;
+      top: -60px;
+      left: 0;
+    }
+  }
+  
+  /* Radius8 */
+  .radius8 {
+    border-radius: 8px;
+  }
+  
+  /* Flex Center */
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Flex Space Between */
+  .flexSpaceCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Flex Null Center */
+  .flexNullCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Typography */
+  .font12 {
+    font-size: 12px;
+  }
+  
+  .font15 {
+    font-size: 15px;
+  }
+  
+  .font40 {
+    font-size: 40px;
+  }
+  
+  .extraBold {
+    font-weight: 800;
+  }
+  
+  .semiBold {
+    font-weight: 600;
+  }
+
+  
