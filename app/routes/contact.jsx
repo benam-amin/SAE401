@@ -1,7 +1,7 @@
 import {styled} from "styled-components";
 // Components
 import ProjectBox from "../components/Elements/ProjectBox";
-import TopNavBar from "../components/Nav/TopNavbar";
+
 // Assets
 import ProjectImg1 from "../img/bulletin1.png";
 import ProjectImg2 from "../img/bulletin2.png";
@@ -36,7 +36,7 @@ function HeaderContact() {
 export function ContactContenu() {
   return (
     <>
-    <TopNavBar />
+    
       <HeaderContact />
       {/* <HeaderWrapper className="container flexSpaceCenter"> */}
         {/* <LeftSide className="flexCenter">
@@ -214,7 +214,7 @@ export function Bulletin() {
         <h1 className="font30 semiBold"> Le dernier bulletin 2018 - 2019 a été consacré à la cuisine italienne</h1><br />
         <p className="font15">Si vous souhaitez commander l'un de ces bulletin vous pouvez envoyer un chèque de 4 € à l'ordre de l'APIRP à l'adresse suivante : Mme Valérie GUILLOUET - 10, rue Blondel - 92400 COURBEVOIE</p>
         </HeaderInfo>
-            <div className="row textCenter">
+            <div className="row text-center">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg1}
@@ -240,7 +240,7 @@ export function Bulletin() {
           <HeaderInfo>
         <h1 className="font30 semiBold"> Ci-dessous les sommaires des derniers bulletins</h1><br />
         </HeaderInfo>
-            <div className="row textCenter">
+            <div className="row text-center">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg4}
@@ -262,7 +262,6 @@ export function Bulletin() {
                 action={() => window.open('https://drive.google.com/file/d/0B34j4qalEtJseHdNS1FRX0xKVGM/view?resourcekey=0-L2vbnBD7zasV7NsrSUX0GQ', '_blank')}
               />
             </div>
-            
           </div>
         </div>
       </div>

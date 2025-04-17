@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+}
+
+@media (max-width: 550px) {
+    .innerWrapper {
+        flex-direction: column;
+    }
+    .styleP {
+        margin: 20px 0;
+    }
+    
+}

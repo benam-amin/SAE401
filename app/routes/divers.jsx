@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../style/css/Divers.css';
 import '../style/css/main.css';
 import image from '../img/paysage_italie.jpg';
-import TopNavBar from "../components/Nav/TopNavbar";
+
 
 const DiversPage = () => {
   const [username, setUsername] = useState('');
@@ -15,7 +15,7 @@ const DiversPage = () => {
 
   return (
     <>
-    <TopNavBar />
+    
     <div className="divers-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <h2 className='h2-titre'>Connexion</h2>

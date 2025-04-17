@@ -1,30 +1,59 @@
-import type { AppLoadContext, EntryContext } from "@remix-run/node";
+import { PassThrough } from "stream";
 import { RemixServer } from "@remix-run/react";
-import { renderToString } from "react-dom/server";
+import isbot from "isbot";
+import { renderToPipeableStream } from "react-dom/server";
 import { ServerStyleSheet } from "styled-components";
+import type { EntryContext } from "@remix-run/node";
 
 export default function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
-  remixContext: EntryContext,
-  loadContext: AppLoadContext,
+  remixContext: EntryContext
 ) {
-  const sheet = new ServerStyleSheet();
+  return new Promise((resolve, reject) => {
+    let didError = false;
 
-  let markup = renderToString(
-    sheet.collectStyles(
-      <RemixServer context={remixContext} url={request.url} />,
-    ),
-  );
-  const styles = sheet.getStyleTags();
+    const sheet = new ServerStyleSheet();
 
-  markup = markup.replace("__STYLES__", styles);
+    const { pipe } = renderToPipeableStream(
+      sheet.collectStyles(
+        <RemixServer context={remixContext} url={request.url} />
+      ),
+      {
+        onShellReady() {
+          const body = new PassThrough();
+          const styles = sheet.getStyleTags();
 
-  responseHeaders.set("Content-Type", "text/html");
+          responseHeaders.set("Content-Type", "text/html");
 
-  return new Response("<!DOCTYPE html>" + markup, {
-    status: responseStatusCode,
-    headers: responseHeaders,
+          // Intercepter le flux pour insérer les styles à la place de __STYLES__
+          const originalWrite = body.write.bind(body);
+          body.write = (chunk: any) => {
+            const chunkStr = chunk.toString();
+            if (chunkStr.includes("__STYLES__")) {
+              return originalWrite(chunkStr.replace("__STYLES__", styles));
+            }
+            return originalWrite(chunk);
+          };
+
+          resolve(
+            new Response(body as any, {
+              status: didError ? 500 : responseStatusCode,
+              headers: responseHeaders,
+            })
+          );
+
+          pipe(body);
+        },
+        onShellError(err) {
+          reject(err);
+        },
+        onError(err) {
+          didError = true;
+          console.error("❌ renderToPipeableStream error:", err);
+        },
+      }
+    );
   });
 }

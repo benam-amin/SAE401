@@ -1,7 +1,7 @@
 import {styled} from "styled-components";
 // Components
 import FullButton from "../components/Elements/FullButton";
-import TopNavBar from "../components/Nav/TopNavbar";
+
 // Assets
 import AddImage2 from "../img/Forum-1.jpg";
 import Programme21 from "../img/Programme21.jpg";
@@ -25,7 +25,7 @@ export function HeaderForum() {
 export default function Forum() {
   return (
     <>
-    <TopNavBar />
+    
     <HeaderForum />
       <Wrapper>
           <div className="container">

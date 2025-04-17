@@ -3,7 +3,7 @@ import UniversityTable from '../components/UniversityTable';
 import '../style/css/Apprendre.css';
 import '../style/css/main.css';
 import heroImage from '../img/italie_rome.jpg';
-import TopNavBar from "../components/Nav/TopNavbar";
+
 
 import logoSorbonneNouvelle from '../img/logo_UNI_SorbonneNouvelle.png';
 import logoParisSorbonne from '../img/logo_UNI_ParisSorbonne.png';
@@ -134,7 +134,7 @@ const Apprendre = () => {
 
     return (
         <>
-          <TopNavBar />
+          
             <div className="apprendre-container">
               <HeaderPage
                   h1="l'italien"

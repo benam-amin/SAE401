@@ -4,7 +4,7 @@ import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
 import adhererImg from '../img/img-adherer.png'; // Chemin vers ton image
 import heroImage from '../img/drapeau_italie.jpg';
 import HeaderPage from "../components/Elements/HeaderPage";
-import TopNavBar from "../components/Nav/TopNavbar";
+
 
 export function HeaderEnseigner() {
     return (
@@ -21,7 +21,7 @@ export function HeaderEnseigner() {
 const Adherer = () => {
     return (
         <>
-        <TopNavBar />
+        
         <HeaderEnseigner />
         <div className="adherer-container">
             

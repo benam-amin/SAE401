@@ -70,16 +70,16 @@ export const loader = async () => {
         url: "http://www.custonaciweb.it/portata-alla-luce-unaltra-villa-romana-a-enna-si-trova-a-15-km-dalla-villa-del-casale-di-piazza-armerina/?fbclid=IwAR2WLelaVEdbJzGPh-KL5CQNjpqOG56KqKzdn5B5NKO5egKzecj5hkkMiBc",
       },
     ],
+    imageDrapeau: images["../img/drapeau_italie2.jpg"],
   };
 };
 
 const Accueil = () => {
   //permet d'utiliser le retour de la fonction loader
-  const { image, actualites } = useLoaderData();
+  const { actualites, imageDrapeau } = useLoaderData();
 
   return (
     <>
-      <TopNavBar />
       <div className="accueil-container">
         <div className="hero">
           {/* <div className="hero-content">
@@ -88,16 +88,16 @@ const Accueil = () => {
           </div> */}
         </div>
         <div className="accueil-container1">
-          <h1 className="h1">Bienvenue sur notre site</h1>
+          <h1 className="h1">Bienvenue sur le site de l'Association des Professeurs d'Italien de la Région Parisienne</h1>
           <TabImg
-            imageUrl={image}
+            imageUrl={imageDrapeau}
             imageAlt="Drapeau italien"
             title="Notre association a pour vocation :"
             description={
               <ul>
-                <li>- Développer la solidarité entre italianistes</li>
-                <li>- Renseigner les professeurs d’italien</li>
-                <li>- Promouvoir l’enseignement de l’italien</li>
+                <li><span className="span">- d’établir et développer</span> des liens de solidarité et d’amitié entre les italianistes de la région parisienne</li>
+                <li><span className="span">- de renseigner</span> les professeurs d’italien à tous niveaux sur la diffusion de l’enseignement de l’italien en région parisienne</li>
+                <li><span className="span">- de promouvoir</span> l’enseignement de l’italien</li>
               </ul>
             }
           />

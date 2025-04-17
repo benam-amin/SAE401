@@ -31,7 +31,7 @@ const HeaderWrapper = styled.section`
   width: 100%;
   min-height: 840px;
   @media (max-width: 960px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top:50px;
   }
 `;

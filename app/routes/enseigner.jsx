@@ -2,7 +2,7 @@ import HeaderPage from "../components/Elements/HeaderPage";
 import heroImage from '../img/img-venise.jpg';
 import '../style/css/Enseigner.css';
 import '../style/css/main.css';
-import TopNavBar from "../components/Nav/TopNavbar";
+
 
 export function HeaderEnseigner() {
   return (
@@ -19,7 +19,7 @@ export default function Enseigner() {
 
   return (
     <>
-    <TopNavBar />
+    
     <HeaderEnseigner/>
       <div className="enseigner-container">
           <div className="enseigner-content1">

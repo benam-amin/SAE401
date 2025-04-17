@@ -10,7 +10,7 @@ const UniversityTable = ({ university }) => {
             </div>
             <div className="university-column">
                 <h4 className='h4'>Cursus proposés</h4>
-                <p>{university.courses}</p>
+                <div>{university.courses}</div>
             </div>
         </div>
     );

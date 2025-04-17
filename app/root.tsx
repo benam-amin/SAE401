@@ -8,6 +8,8 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import styles from "./tailwind.css";
+import TopNavbar from "./components/Nav/TopNavbar";
+import Footer from  "./components/footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -28,13 +30,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="Italien région parisienne, italien secondaire, italien primaire, italien supérieur" />
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
         <Meta />
         <Links />
+        <title>APIRP</title>
+        {/* Placeholder pour styles injectés côté serveur */}
         {typeof document === "undefined" ? "__STYLES__" : null}
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
+        <TopNavbar />
         {children}
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>

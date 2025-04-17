@@ -1,6 +1,6 @@
 import {styled} from "styled-components";
 // Components
-import TopNavBar from "../components/Nav/TopNavbar";
+
 import BlogBox from "../components/Elements/BlogBox";
 // import FullButton from "./FullButton";
 //Assets
@@ -24,7 +24,7 @@ export function HeaderActivités() {
 export default function Activités() {
   return (
     <>
-    <TopNavBar />
+    
     <HeaderActivités />
       <Wrapper >
         <div className="whiteBg">
