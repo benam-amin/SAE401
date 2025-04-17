@@ -64,17 +64,17 @@ const Adherer = () => {
                     <ChampTexte
                         id = "nom"
                         label = "Nom"
-                        type = "texte"
+                        type = "text"
                     />
                     <ChampTexte
                         id = "prenom"
                         label = "Prénom"
-                        type = "texte"
+                        type = "text"
                     />
                     <ChampTexte
                         id = "adresse"
                         label = "Adresse"
-                        type = "texte"
+                        type = "text"
                     />
                     <ChampTexte
                         id = "telephone"
@@ -89,9 +89,9 @@ const Adherer = () => {
                     <ChampTexte
                         id = "etablissement"
                         label = "Etablissement"
-                        type = "texte"
+                        type = "text"
                     />
-                    <p>Type d'établissement : </p>
+                    <p className='faux_label'>Type d'établissement : </p>
                     <ChampRadio
                         id = "type_etablissement"
                         label = "Privé"
@@ -100,7 +100,7 @@ const Adherer = () => {
                         id = "type_etablissement"
                         label = "Public"
                     />
-                    <p>Type de contrat : </p>
+                    <p className='faux_label'>Type de contrat : </p>
                     <ChampRadio
                         id = "contrat"
                         label = "Adhésion"
@@ -111,8 +111,6 @@ const Adherer = () => {
                     />
 
                 </form>
-
-                
             </div>
         </div>
         </>
