@@ -1,6 +1,6 @@
 export function ChampTexte({id, label, type}) {
     return (
-      <div>
+      <div className="input" >
         <label for={id}>{label}</label>
         <input name={id} className="font13" type={type} placeholder={label}/>
       </div>
@@ -9,7 +9,7 @@ export function ChampTexte({id, label, type}) {
 
   export function ChampRadio({id, label}) {
     return (
-      <div>
+      <div className="input_radio">
         <label for={id}>{label}</label>
         <input name={id} className="font13" type="radio"/>
       </div>
