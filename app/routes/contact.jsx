@@ -30,13 +30,13 @@ function HeaderContact() {
   );
 }
 
-export function ContactContenu() {
-  return (
-    <>
-      <HeaderContact />
-    </>
-  );
-}
+// export function ContactContenu() {
+//   return (
+//     <>
+//       <HeaderContact />
+//     </>
+//   );
+// }
 
 export function Assoc() {
   return (
@@ -175,7 +175,7 @@ export function Bulletin() {
 export default function Contact() {
   return (
     <>
-      <ContactContenu />
+      <HeaderContact />
       <Assoc />
       <Elu />
       <Bulletin />
