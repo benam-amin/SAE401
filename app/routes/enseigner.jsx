@@ -11,6 +11,7 @@ export function HeaderEnseigner() {
     h1Green = "Enseigner"
     description = "Bienvenue sur notre page dédiée à l'enseignement. Découvrez les avantages de devenir membre de notre association."
     headerImage = {heroImage}
+    scrollTo="#enseigner"
     />
   );
 }
@@ -21,7 +22,7 @@ export default function Enseigner() {
     <>
     
     <HeaderEnseigner/>
-      <div className="enseigner-container">
+      <div className="enseigner-container" id="enseigner">
           <div className="enseigner-content1">
               <h1 className='h1'>Comment devenir enseignant</h1>
             <div className="content-txt">

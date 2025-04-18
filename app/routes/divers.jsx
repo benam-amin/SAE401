@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../style/css/Divers.css';
 import '../style/css/main.css';
+import '../style/css/formulaire.css';
 import image from '../img/paysage_italie.jpg';
 
 

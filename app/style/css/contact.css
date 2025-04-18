@@ -1,7 +1,6 @@
 /* Contact Page Styles */
 .wrapper {
     width: 100%;
-    margin: 50px 0;
   }
   
   .whiteBg {
@@ -10,7 +9,6 @@
   
   .container {
     width: 100%;
-    padding: 0 15px;
   }
   
   .header-info h1 {
@@ -41,7 +39,6 @@
   .row {
     display: flex;
     justify-content: center;
-    gap: 30px;
   }
   
   .text-center {

@@ -8,13 +8,14 @@ import Formulaire from "../components/Elements/formulaireAdhesion";
 
 
 
-export function HeaderEnseigner() {
+export function HeaderAdherer() {
     return (
       <HeaderPage
       h1 = "à notre association "
       h1Green = "Adhérer "
       description = "Bienvenue sur notre page d'adhésion. Découvrez les avantages de devenir membre de notre association."
       headerImage = {heroImage}
+      scrollTo="#adherer"
       />
     );
   }
@@ -24,8 +25,8 @@ const Adherer = () => {
     return (
         <>
         
-        <HeaderEnseigner />
-        <div className="adherer-container">
+        <HeaderAdherer />
+        <div className="adherer-container" id='adherer'>
             
             <div className="adherer-content1">
                 
@@ -52,14 +53,14 @@ const Adherer = () => {
                 </div>
             </div>
 
-            <div className="adherer-content2">
+            {/* <div className="adherer-content2">
                 <h2 className='h2'>Qui peut adhérer à l’association ?</h2>
                 <p className='p'>Peuvent faire partie de l’Association tous les professeurs d’italien de la région parisienne en activité ou à la retraite, quel que soit l’ordre d’enseignement auquel ils appartiennent.</p>
                 <h3>Comment y adhérer ?</h3>
                 <p className='p'>Pour devenir membres il faut : remplir une fiche d’inscription ET verser annuellement une cotisation, dont le montant est fixé chaque année par le Conseil d’administration.</p>
 
                 <button className="button" onClick={() => window.open(FicheAdhesionPDF, '_blank')}>Télécharger la fiche d'adhésion</button>
-            </div>
+            </div> */}
             <Formulaire />
         </div>
         </>

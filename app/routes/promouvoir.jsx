@@ -17,6 +17,7 @@ export function HeaderPromouvoir() {
       h1Green="Promouvoir"
       description="Bienvenue sur notre page promouvoir l'italien. Dans le paysage culturel et linguistique mondial, la langue italienne brille de sa propre lumière..."
       headerImage={heroImage}
+      scrollTo="#promouvoir"
     />
   );
 }
@@ -25,7 +26,7 @@ export default function Promouvoir() {
   return (
     <>
       <HeaderPromouvoir />
-      <section className="wrapper">
+      <section className="wrapper" id="promouvoir">
         <div className="whiteBg">
           <div className="container">
             <div className="header-info">
