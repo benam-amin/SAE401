@@ -1,5 +1,4 @@
 .university-table {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse; /* Permet de fusionner les bordures des cellules  */

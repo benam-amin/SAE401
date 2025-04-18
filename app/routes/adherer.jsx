@@ -1,6 +1,6 @@
 import '../style/css/Adherer.css'; // Importe le fichier CSS pour le composant Adherer
 import '../style/css/main.css'; // Importe le fichier CSS pour le composant Adherer
-import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
+// import FicheAdhesionPDF from '../assets/pdf/fiche_adhesion.pdf';
 import adhererImg from '../img/img-adherer.png'; // Chemin vers ton image
 import heroImage from '../img/drapeau_italie.jpg';
 import HeaderPage from "../components/Elements/HeaderPage";

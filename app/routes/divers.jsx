@@ -3,6 +3,7 @@ import '../style/css/Divers.css';
 import '../style/css/main.css';
 import '../style/css/formulaire.css';
 import image from '../img/paysage_italie.jpg';
+import Formulaire from "../components/Elements/formulaireAdhesion";
 
 
 const DiversPage = () => {
@@ -47,6 +48,7 @@ const DiversPage = () => {
         className="login-image img"
       />
     </div>
+    <Formulaire />
     </>
   );
 };

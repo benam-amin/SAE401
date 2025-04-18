@@ -1,6 +1,6 @@
 import { useState } from "react";
-import '../../style/css/formulaire.css'; 
-import '../../style/css/fullButton.css'; 
+import '../../style/css/formulaire.css';
+import '../../style/css/fullButton.css';
 import { ChampTexte, ChampRadio, ChampCheckbox } from "./Formulaire_champ";
 
 export default function Form() {
@@ -8,9 +8,10 @@ export default function Form() {
     const [contrat, setContrat] = useState("");
 
     return (
+        <>
+        <h2 className="darkColor title">FORMULAIRE D'ADHÉSION</h2>
         <div className="form-wrapper">
             <form action="#" className="form" method="GET">
-                
                 {/* SECTION 1 : Informations personnelles de l'utilisateur */}
                 <fieldset>
                     <legend>Informations personnelles</legend>
@@ -37,7 +38,6 @@ export default function Form() {
                     <div className="input-group">
                         <ChampTexte id="etablissement" label="Etablissement" type="text" />
                         <p className="faux_label">Type d'établissement :</p>
-                        
                         {/* Choix entre établissement privé ou public */}
                         <div className="input_autre">
                             <ChampRadio id="type_prive" name="type_etablissement" label="Privé" />
@@ -51,7 +51,6 @@ export default function Form() {
                     <legend>Motif de la demande</legend>
                     <div className="input-group">
                         <p className="faux_label">Motif de la demande :</p>
-                        
                         {/* Choix du contrat avec gestion du champ conditionnel */}
                         <div className="input_autre">
                             <ChampRadio
@@ -98,7 +97,6 @@ export default function Form() {
                     <legend>Paiement</legend>
                     <div className="input-group">
                         <p className="faux_label">Montant de la cotisation :</p>
-                        
                         {/* Choix entre deux montants : cotisation normale ou de soutien */}
                         <div className="input_autre">
                             <ChampRadio id="cotisation_normale" name="paiement" label="23 € - Cotisation normale" />
@@ -118,5 +116,6 @@ export default function Form() {
                 />
             </form>
         </div>
+        </>
     );
 }

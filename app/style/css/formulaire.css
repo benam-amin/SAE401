@@ -6,7 +6,9 @@
     min-height: 100vh;
     padding: 1rem;
   }
-  
+  .title {
+    text-align: center;
+  }
   .form {
     background-color: white;
     padding: 2.5rem 3rem;
