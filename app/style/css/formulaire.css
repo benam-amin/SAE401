@@ -98,7 +98,9 @@
     color: #000;
     margin-left: 0.5rem;
   }
-  
+  .input_autre .input {
+    margin-top: 1.5rem;
+  }
   .input_autre input[type="radio"],
   .input_autre input[type="checkbox"] {
     accent-color: #cd212a;
@@ -110,7 +112,9 @@
   .full-button {
     margin-bottom: 1rem;
   }
-  
+  .mt {
+    margin-top: 1.5rem;
+  }
   /* RESPONSIVE DESIGN */
   @media screen and (max-width: 768px) {
     .form {

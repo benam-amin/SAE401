@@ -7,12 +7,20 @@ export function ChampTexte({id, label, type}) {
   );
 }
 
-export function ChampRadio({id, label, name}) {
+export function ChampRadio({ id, name, label, onChange, checked }) {
   return (
-      <div className="option">
-          <input name={name} id={id} className="font13" type="radio"/>
-          <label htmlFor={id}>{label}</label>
-      </div>
+    <label htmlFor={id} style={{ display: "flex", alignItems: "center" }}>
+      {/* Bouton radio */}
+      <input
+        type="radio"
+        id={id}
+        name={name}
+        onChange={onChange}
+        checked={checked}
+      />
+      {/* Texte du label à droite */}
+      <span>{label}</span>
+    </label>
   );
 }
 
