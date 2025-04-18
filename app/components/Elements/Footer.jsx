@@ -1,8 +1,7 @@
-import {styled} from 'styled-components';
 // Assets
-import LogoImg from "../assets/svg/Logo";
-import '../style/css/footer.css';
-import '../style/css/main.css';
+import LogoImg from "../../assets/svg/Logo";
+import '../../style/css/footer.css';
+import '../../style/css/main.css';
 
 export default function Footer() {
 

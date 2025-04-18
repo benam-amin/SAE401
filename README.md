@@ -1,12 +1,24 @@
-# Welcome to Remix!
+# The ARPIP website has moved to Remix
 
 - 📖 [Remix docs](https://remix.run/docs)
 
-## Development
+## Install dependencies
+
+Create the Remix project:
+```sh
+npx create-remix@latest
+```
+
+### Install styled components
+
+```sh
+npm install styled-components
+```
+
+### Dev server :
 
 Run the dev server:
-
-```shellscript
+```sh
 npm run dev
 ```
 
@@ -15,13 +27,13 @@ npm run dev
 First, build your app for production:
 
 ```sh
-npm run build
+npx remix vite:build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+npx remix-serve build/server/index.js
 ```
 
 Now you'll need to pick a host to deploy it to.

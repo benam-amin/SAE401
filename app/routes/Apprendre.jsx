@@ -1,5 +1,5 @@
 import HeaderPage from "../components/Elements/HeaderPage";
-import UniversityTable from '../components/UniversityTable';
+import UniversityTable from '../components/Elements/UniversityTable';
 import '../style/css/Apprendre.css';
 import '../style/css/main.css';
 import heroImage from '../img/italie_rome.jpg';

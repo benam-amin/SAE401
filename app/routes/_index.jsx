@@ -2,8 +2,8 @@
 import '../style/css/Accueil.css';
 import '../style/css/main.css';
 import { useLoaderData } from "@remix-run/react";
-import TabImg from "../components/TabImg";
-import Actualite from "../components/Actualite";
+import TabImg from "../components/Elements/TabImg";
+import Actualite from "../components/Elements/Actualite";
 
 // Chargement dynamique des images
 const images = import.meta.glob("../img/*", { eager: true, import: "default" });

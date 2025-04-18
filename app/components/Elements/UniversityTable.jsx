@@ -1,4 +1,4 @@
-import '../style/css/UniversityTable.css';
+import '../../style/css/UniversityTable.css';
 
 const UniversityTable = ({ university }) => {
     return (
